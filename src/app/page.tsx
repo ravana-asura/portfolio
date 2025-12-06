@@ -183,7 +183,7 @@ export default function Home() {
             </div>
           </div>
           <div className="overflow-hidden">
-            <div className="flex items-center gap-16 animate-[marquee_30s_linear_infinite] hover:[animation-play-state:paused] py-6">
+            <div className="flex items-center gap-16 animate-[marquee_40s_linear_infinite] hover:[animation-play-state:paused] py-6">
               {[...techStack, ...techStack].map((t, i) => (
                 <div
                   key={i}
@@ -343,8 +343,8 @@ export default function Home() {
           <div className="relative rounded-3xl overflow-hidden border border-border/60 backdrop-blur-sm bg-background/20">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background/5 to-background/10"></div>
 
-            <div className="relative">
-              <div className="aspect-[16/9] relative overflow-hidden">
+            <div className="relative grid md:grid-cols-2 gap-8 items-center">
+              <div className="aspect-[4/3] relative overflow-hidden rounded-2xl">
                 <Image
                   src="/specialproject.png"
                   alt="Everything - Special Project"
@@ -479,7 +479,9 @@ export default function Home() {
                       </svg>
                     </div>
                     <h3 className="text-lg font-medium">WhatsApp</h3>
-                    <p className="text-lg font-medium">Active 24*7</p>
+                    <p className="text-lg font-medium text-blue-500">
+                      Active 24*7
+                    </p>
                     <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
                       +977 9811728625
                     </p>
